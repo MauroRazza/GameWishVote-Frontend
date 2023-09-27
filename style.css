@@ -1,0 +1,164 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500&display=swap');
+
+/* General Setting */
+* {
+    box-sizing: border-box !important;
+    font-family: 'Unbounded', cursive;
+}
+
+/* Logo Dimension */
+.navbar-brand img {
+    width: 250px;
+}
+
+.footer-brand img {
+    width: 100px;
+}
+
+/* Bootstrap Override */
+ /* Menu */
+ .sticky-top {
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+    box-shadow: none;
+}
+
+ /* Buttons */
+.btn-primary, .bg-primary{
+    background-color: #0071bc !important;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #015d9b !important;
+}
+
+.btn-secondary, .bg-secondary{
+    background-color: #5c636a !important;
+    border: none;
+}
+.btn-secondary:hover{
+    background-color: #393d41 !important;
+}
+
+.btn-success, .bg-success{
+    background-color: #107c0f !important;
+    border: none;
+}
+.btn-success:hover{
+    background-color: #0c550b !important;
+}
+
+.btn-warning{
+    background-color: #fbb03b;
+    color: white;
+    border: none;
+}
+.btn-warning:hover{
+    background-color: #bf882f !important;
+    color: white;
+}
+
+.btn-danger, .bg-danger{
+    background-color: #ed1c24 !important;
+    border-color: none;
+}
+.btn-danger:hover{
+    background-color: #b5161b !important;
+}
+
+ /* Buttons Genre */
+.btn-outline-primary{
+    border-color: #0071bc;
+}
+.btn-outline-primary:hover{
+    background-color: #0071bc;
+    border-color: #0071bc;
+}
+
+.btn-outline-secondary{
+    border-color: #5c636a;
+}
+.btn-outline-secondary:hover{
+    background-color: #5c636a;
+    border-color: #393d41;
+}
+
+.btn-outline-success{
+    border-color: #107c0f;
+}
+.btn-outline-success:hover{
+    background-color: #107c0f;
+    border-color: #107c0f;
+}
+
+.btn-outline-warning{
+    border-color: #000000;
+    color: #000000;
+}
+.btn-outline-warning:hover{
+    background-color: #fbb03b;
+    border-color: #d29430;
+}
+
+.btn-outline-danger{
+    border-color: #ed1c24;
+}
+.btn-outline-danger:hover{
+    background-color: #ed1c24;
+    border-color: #ed1c24;
+}
+
+.btn-outline-dark{
+    border-color: #dbdbdb;
+}
+.btn-outline-dark:hover{
+    border-color: #dbdbdb;
+    background-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+ /* Links */
+a {
+    color: #595c5f;
+}
+a:hover{
+    color: #000000;
+}
+
+/* Products */
+ /* Product Image */
+.z-index1{
+    z-index: 1;
+}
+.z-index-2{
+    z-index: 2;
+}
+
+ /* Product Shadow */
+.shadow-hover {
+    position: relative;
+    display: inline-block;
+}
+.shadow-hover img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.shadow-hover:hover img {
+    transform: translateY(-5px);
+}
+.shadow-hover::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.359);
+    opacity: 0;
+    transition: opacity 0.3s;
+    filter: blur(5px);
+}
+.shadow-hover:hover::before {
+    opacity: 1;
+}
